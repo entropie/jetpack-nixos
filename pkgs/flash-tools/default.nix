@@ -1,7 +1,7 @@
 { stdenv
 , lib
 , makeWrapper
-, bzip2_1_1
+, bzip2
 , fetchurl
 , python3
 , perl
