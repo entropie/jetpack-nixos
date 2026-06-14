@@ -66,7 +66,7 @@ makeScope final.newScope (self: {
         # We use a more recent version of bzip2 here because we hit this bug
         # extracting nvidia's archives:
         # https://bugs.launchpad.net/ubuntu/+source/bzip2/+bug/1834494
-        nativeBuildInputs = [ final.buildPackages.bzip2_1_1 ];
+        nativeBuildInputs = [ final.buildPackages.bzip2];
       } ''
       bzip2 -d -c $src | tar xf -
       mv Linux_for_Tegra $out
